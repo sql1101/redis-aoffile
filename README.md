@@ -59,3 +59,10 @@ python3 redis_aof.py  --aof-file /var/lib/redis/appendonly.aof --key a4  --comma
 set a4 1;
 set a4 999
 ```
+
+#### 感谢
+1. 感谢阿里云专家的支持
+2. 感谢hiredis 开发者
+* 本人代码能力有限，如果有代码有BUG和建议请与我联系，谢谢
+
+
