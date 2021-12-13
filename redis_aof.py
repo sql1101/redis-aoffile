@@ -15,14 +15,18 @@ def parse_args():
     return args
 
 def redis_command(command,key,command_shell):
-    if command_shell == 'shell':
-        command = " ".join(command)
 
     if key:
         if command[1] == key:
-            print(command)
+            if command_shell == 'shell':
+                print(" ".join(command))
+            else:
+                print(command)
     else:
-        print(command)
+        if command_shell == 'shell':
+            print(" ".join(command))
+        else:
+            print(command)
 
 
 def parser_aoffile(aoffile,key=False,command_shell=False):
